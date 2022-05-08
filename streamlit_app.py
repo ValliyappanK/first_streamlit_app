@@ -12,7 +12,7 @@ streamlit.text('🍓 Avocado Toast')
 streamlit.header('🍉 Build ur Own Fruit Smoothie 🍎')
 
 fruit_list=pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
-fruit_list=fruit_list.set_index('Fruit')
+fruit_list=fruit_list.set_index('Serving_Size')
 
 #multi select for the user to pick their fruits
 streamlit.multiselect("Pick ur Fruits",list(fruit_list.index))
