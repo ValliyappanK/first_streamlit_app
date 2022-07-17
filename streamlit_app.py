@@ -23,7 +23,7 @@ streamlit.dataframe(fruits_show)
 
 #new section for Fruity Vice
 streamlit.header('Fruityvice Fruit Advice')
-var_fruit="kiwi"
+var_fruit="apple"
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" +var_fruit)
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" +"kiwi")
 #normalizing json text
