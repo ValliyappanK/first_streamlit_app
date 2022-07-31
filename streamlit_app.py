@@ -26,7 +26,7 @@ streamlit.dataframe(fruits_show)
 #new section for Fruity Vice
 streamlit.header('Fruityvice Fruit Advice')
 try:
-fruit_choice=streamlit.text_input('What fruit would you like to know about?')
+  fruit_choice=streamlit.text_input('What fruit would you like to know about?')
 if not fruit_choice:
   streamlit.error("Please select a fruit to get information")
 else
